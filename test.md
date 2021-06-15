@@ -1,6 +1,4 @@
----
-css: ./wolf.css
----
+<link rel="stylesheet" href="./wolf.css">
 
 Hello World
 ===========
