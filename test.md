@@ -1,5 +1,5 @@
 ---
-<link rel="stylesheet" href="./wolf.css"></link>
+<link rel="stylesheet" href="./wolf.css">
 ---
 
 Hello World
