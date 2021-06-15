@@ -1,7 +1,5 @@
 ---
-output:
-  html_document:
-    css: ./wolf.css
+css: ./wolf.css
 ---
 
 Hello World
