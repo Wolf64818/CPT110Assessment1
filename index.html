@@ -24,6 +24,81 @@
 <p>I will upload more information shortly ...</p>	
 
 
+<h2>My Project</h2>
+
+<h3>Side Note</h3>
+
+<p>It is hard to say what is a good option for an IT problem to solver.  My initial response would be to create a journal entry system that could taske your input across any of your Laptop, iPhone, iPad, etc and create a synced system to set daily requiorements, and see how you have exceeded them or maintained them.  Of course there are loads of apps like this already after research I had to change my suggestions.</p>
+
+<p>So my mind turned to something Covid related.  Like making an app that could an app that allows the viewers to punch in their location and then that should generate a list of the places nearby that are Tier 1, 2, 3, and 4.  These locations should be given with an estimated time of abstinent - so that even after a deep clean you cold choose not to visit it for the next week or so.  But this has already been around also! </p>
+
+
+<h3>Overview (100 words) - This should be a summary of what the project will be.</h3>
+
+<p>So that was that, and now I've thought of another project.</p>
+
+<p>Imaging being able to find out what your expenditure was across a years worth of shopping.  we know that a lot of Banks have a section in their profile on us that breaks things down into bills, groceries etc.  But what if you had an app to pin point exactly where you were spending what?</p>
+
+<p>My project idea is to create an application that 'reads' receipts to generate csv files that tell you what you bought (say 'milk 3l' ) and then when you bought it (on different days during the year) and how much.  So that over a year you can see what you spent on milk, or lamb mince etc etc.  You could accurately pin point your most expensive products and go on to find a way to decreasing them.</p>
+
+
+<h3>Motivation (100) words) - This should be a description of why the project will be interesting or useful.</h3>
+
+
+<p>The motivation behind this project is to create an easy tool that people can use to analyse their shopping.  It will be incredibly useful for thousands of people who want to try and make their shopping smaller, or at least accessable, to see where they are spending their money.</p>
+
+<p>There is a bit of a bar to entry for this kind of information though - there are a few options that allow for the conversion of receipt to text to csv, but at that stage a lot of people still wouldn't know how to do that, or what to do with the csv.  I want to make a program that makes this whole process dead easy.</p>
+
+<p>I suffered through a similar project where I painstakingly recorded each line in a receipt by hand - there has to be a better way to find out how much I am spending on meat or milk!</p>
+
+<h3>Description (500 words) - Detailed description of the features of the product or service</h3>
+
+<p>The features of this product should be fairly simply.  It will reply on clean input, that is to say your receipts are easy to read, they are clean and they don't have grime on them.</p>
+
+<p>You will be required to scan them and you have to ensure that they are scanned straight, not on an angle.</p>
+
+<p>Once you've scanned the receipt I would like the app to be launched, and you select how many receipts you want to open and then the app takes all the data from the receipt and turns it into a CSV file for your to later import to a spreadsheet or to a program.</p>
+
+<p>The idea being that the app will read one sentence at a time, take the text from that sentence and convert it into a line of comma separated variables in the format of:  item, quantity, total cost, date acquired.</p>
+
+<p>A feature I imagine adding later is to say Woolworths Full Cream milk 3L and Coles Brand milk 3L would both be considered 'milk 3L' (they price match so changing prices later is not a concern).</p>
+
+<p>Once you have scanned your receipts the app should be capable of creating a file of entries which it can then sort by date.  This will of course contain thousands of lines and won't be very easy to look through and see any patterns.  But it will be a detailed list of everything you have bought in the last year.</p>
+
+<p>I would like it to further have the functionality of being able to create categories that most people would consider similar.  It would be hard to see the patterns in those thousands of lines, so what about making less than 10 categories that are easy to see?</p>
+
+<p>I would like the app to be able to sort data according to a few categories (these will be predetermined to make the program run quicker and make it easier to create).</p>
+
+<p>The top categories I can think of are Dairy (yogurt, milk, cheese etc), Meat (lamb, mince, turkey, fish, eggs, chicken), Staples (like bread, muffins, lentils, chickpeas, pasta) Vegetables (potatoes, carrots canned tomatoes,) Spices (salt, pepper, tabasco like products) Nuts (almonds, almond flour, walnuts), Condiments (tomato sauce, Chicken Tonight style things) Treats (chocolate, chips, cakes, finger buns, store bought pizzas) Spreads (honey, peanut butter, chutney etc) and Takeout (pizzas, coffees on the go, fish and chips, burgers etc) Medicines (anything from bandages to Strepsils), House (anything from Windex to scourers) then you can really see a pattern emerging in the way you spend money. And target it if necessary.</p>
+
+
+<h3>Tools and Technologies (100) words) - Describe the software, hardware and/or other equipment needed. Include any relevant open source tools as appropriate.</h3>
+
+<p>For someone to use this app, and indeed for the testing of this app we will require the use of a scanner.  I prefer the idea of an app working with a scanner rather than ust taking a photo with your phone because the accuracy of the photo can be somewhat hard to achieve - whereas scanning at home is pretty hard to mess up.  The scanner should be able to save the file in either GreyScale to make text matching easier (sometimes receipts are not just black and white.)</p>
+
+<p>I will also require an open source method to convert the pdf file into text.  I'm not advanced enough to come up with my own OCR so I could use an open source type available like Online OCR or NanoNets, and use it to create the text that I needed to extract out of the receipts.</p>
+
+<p>Or I could assume that the person using this will not use more than 1000 pages worth of receipts a month (fair because my app is designed for a single person, and not a business) and then just use Amazon Textract (which is free for usage under 1000 pages a month).</p>
+
+<p>I would also need a language to code in to take the text from the OCR to make a CSV file.  I would then need to use the information in that CSV file to create a report, the bit that we're really interested in.  I would probably use the language Perl (I am familiar with it and its great at handling data sets).</p>
+
+<h3>Skills Required (100 words) - List the skills are required for your project, including software that needs to be written, and special hardware (if any). How feasible will it be to find the skills, software and hardware required?</h3>
+
+<p>For my project I will need a scanner, (which I have) I will need an open source OCR (which I will have to get) and I will need to be able to make the OCR work on the pdfs that I give it from the scanner.</p>
+
+<p>Other skills include the ability to write code to effectively take this information (which the OCR may or may not have already stored as a CSV) and do the most important thing, create the report: set up the categories, put things in the categories and when I make the report, note the category with the highest expenditure.</p>
+
+<p>Some of these skills I already have but others (especially on the side of the OCR) I will definitely need to acquire.  Perhaps I have chosen a bit of an unfeasible project for a beginner, but maybe I overestimate what I don't know.  It seems like an okay project, given that the OCR I will choose should handle the data extraction so that I don't have to worry about that, I just do the coding side of things.</p>
+
+
+<h3>Outcome (100 words) - If the project is successful, what will be the outcome? How will the original problem be solved? What impact will this development have?</h3>
+
+<p>This project will have an amazing outcome for anyone who struggles to keep up to date with their shopping or who really wants to get to grips with what their worst area of expenditure is.</p>
+
+<p>I did a similar project by hand for nearly a year and it was surprising the results - our number one single item we spent the most on in a year was milk ($1099) then tomato cans ($668).  Our third single biggest item was shoulder cut lamb, around $580 ish.  So you really can learn quite a fair bit, just on your expenditure.</p>
+
+<p>I intend to use this to save money, track my spending, see any trends, and most importantly save the thousands of hours that go into manually typing out receipts - I think others would benefit from this also !!!</p>
+
 
 
 </body>
