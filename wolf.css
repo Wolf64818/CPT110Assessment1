@@ -12,4 +12,11 @@ body
 }
 
 
-
+p {
+  background-color: #11130F;
+  font-size: 14pt;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 2em;
+  color: #2F6703;
+  text-indent: 2em;
+}
